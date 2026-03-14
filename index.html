@@ -5,14 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Annika Borrelli | Professional Golf Journey</title>
-    <meta name="description"
-        content="Annika Borrelli is an American professional golfer competing across the Ladies European Tour, Epson Tour, and LET Access Series. Explore her journey, highlights, and official platforms.">
+    <meta name="description" content="Annika Borrelli is an American professional golfer competing across the Ladies European Tour, Epson Tour, and LET Access Series. Explore her journey, highlights, and official platforms.">
     <meta name="author" content="BuiltByCold">
     <meta name="theme-color" content="#10ade4">
+
     <meta property="og:title" content="Annika Borrelli | Professional Golf Journey">
-    <meta property="og:description"
-        content="A premium one-page profile for Annika Borrelli, highlighting her amateur titles, professional progression, and official golf platforms.">
+    <meta property="og:description" content="A premium one-page profile for Annika Borrelli, highlighting her amateur titles, professional progression, and official golf platforms.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/site-screenshot.png">
+    <meta property="og:url" content="https://annikaborrelli.netlify.app">
+    <meta property="og:site_name" content="Annika Borrelli">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Annika Borrelli">
+    <meta property="og:image:secure_url" content="https://annikaborrelli.netlify.app/assets/images/site-screenshot.png">
+
     <link rel="icon" href="assets/images/brand-mark.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="motion-site">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
@@ -54,7 +63,7 @@
         <section class="hero" id="top" data-section="top">
             <div class="hero__overlay"></div>
             <div class="section-shell hero__shell">
-                <div class="hero__card-stack" aria-hidden="true">
+                <div class="hero__card-stack" aria-hidden="true" data-hero-layer="card" data-reveal="left">
                     <article class="polaroid-card polaroid-card--back">
                         <div class="polaroid-card__media">
                             <img src="assets/images/hero-back-card.jpg" alt="">
@@ -73,11 +82,7 @@
                     </article>
                 </div>
 
-                <!-- <div class="hero__club" aria-hidden="true">
-          <img src="assets/images/hero.jpg" alt="">
-        </div> -->
-
-                <div class="hero__content">
+                <div class="hero__content" data-hero-layer="content" data-reveal="right" data-reveal-delay="140">
                     <h1 class="hero__title">
                         Pro Golfer
                     </h1>
@@ -124,19 +129,18 @@
                         Epson Tour and LET. Discipline, poise, and a clear path to the next level.
                     </p>
                 </div>
-
-
             </div>
         </section>
 
-        <p class="hero__signature" aria-hidden="true">AB</p>
+        <p class="hero__signature" aria-hidden="true" data-hero-layer="signature" data-reveal="fade"
+            data-reveal-delay="280">AB</p>
 
         <section class="section section--lime about" id="about" data-section="about">
             <div class="section-shell">
-                <p class="section-label">About Me</p>
+                <p class="section-label" data-reveal="fade">About Me</p>
 
                 <div class="about__grid">
-                    <div class="about__copy">
+                    <div class="about__copy" data-reveal-children="up">
                         <h2 class="display-title display-title--dark">
                             Who is
                             <span>Annika</span>
@@ -160,10 +164,10 @@
                     </div>
 
                     <div class="about__media">
-                        <div class="visual-frame visual-frame--dark">
+                        <div class="visual-frame visual-frame--dark" data-reveal="scale" data-parallax-speed="0.06">
                             <img src="assets/images/about-sculpture.jpg" alt="Abstract golf sculpture placeholder">
                         </div>
-                        <div class="mini-card">
+                        <div class="mini-card" data-reveal="right" data-reveal-delay="120" data-parallax-speed="0.1">
                             <img src="assets/images/portrait-card.jpg"
                                 alt="Stylized Annika Borrelli portrait placeholder">
                         </div>
@@ -173,18 +177,18 @@
 
             <section class="section career" id="career" data-section="career">
                 <div class="section-shell">
-                    <p class="section-label">My Career</p>
-
+                    <p class="section-label" data-reveal="fade">My Career</p>
+    
                     <div class="career__headline-row">
-                        <div class="career__intro">
+                        <div class="career__intro" data-reveal-children="up">
                             <p class="section-copy section-copy--compact">
                                 From amateur titles to international starts, Annika&apos;s career reflects patience,
                                 competitive maturity,
                                 and a clear climb through women&apos;s professional golf.
                             </p>
                         </div>
-
-                        <div class="career__heading-group">
+    
+                        <div class="career__heading-group" data-reveal-children="up">
                             <h2 class="display-title display-title--dark display-title--stacked">
                                 Career
                                 <span>Highlights</span>
@@ -193,21 +197,19 @@
                                     aria-hidden="true">&nearr;</span></a>
                         </div>
                     </div>
-
-                    <div class="career__cards">
+    
+                    <div class="career__cards" data-reveal-grid>
                         <article class="career-card career-card--portrait">
-                            <img src="assets/images/annika-winner-utah.jpg"
-                                alt="Annika Borrelli, Utah Women's Open Champion">
+                            <img src="assets/images/annika-winner-utah.jpg" alt="Annika Borrelli, Utah Women's Open Champion">
                             <div class="career-card__caption">
                                 <span class="career-card__year">2019</span>
                                 <h3>Utah Women&apos;s Open Champion</h3>
                             </div>
                         </article>
-
+    
                         <article class="career-card career-card--cluster">
                             <div class="career-card__cluster-item career-card__cluster-item--art">
-                                <img src="assets/images/annika-winner-cali2.jpg"
-                                    alt="California Women's Amateur victory">
+                                <img src="assets/images/annika-winner-cali2.jpg" alt="California Women's Amateur victory">
                             </div>
                             <div class="career-card__cluster-item career-card__cluster-item--art">
                                 <img src="assets/images/annika-winner-cali.jpg"
@@ -220,7 +222,7 @@
                                     amateur resume.</p>
                             </div>
                         </article>
-
+    
                         <article class="career-card career-card--feature">
                             <div class="career-card__cluster-item career-card__cluster-item--art">
                                 <img src="assets/images/annika-epson.jpg" alt="Epson Tour competition">
@@ -232,7 +234,7 @@
                             <h3>Epson Tour Competition</h3>
                             <p>Annika entered Epson Tour events as part of her transition into professional golf.</p>
                         </article>
-
+    
                         <article class="career-card career-card--detail">
                             <div class="career-card__detail-block">
                                 <span class="career-card__year">College Golf</span>
@@ -251,14 +253,14 @@
         <section class="section section--navy platforms" id="platforms" data-section="platforms">
             <div class="section-shell">
                 <div class="platforms__header">
-                    <div>
+                    <div data-reveal-children="up">
                         <h2 class="display-title display-title--light">
                             Partnerships
                             <span>&amp; Events</span>
                         </h2>
                     </div>
 
-                    <div class="platforms__header-copy">
+                    <div class="platforms__header-copy" data-reveal-children="up">
                         <p class="section-label section-label--light">My Partnerships</p>
                         <p class="section-copy section-copy--light">
                             Annika&apos;s public competitive footprint currently centers on verified golf platforms and
@@ -277,7 +279,7 @@
                     </div>
                 </div>
 
-                <div class="platforms__rail" aria-label="Verified platforms">
+                <div class="platforms__rail" aria-label="Verified platforms" data-reveal-grid>
                     <article class="platform-card">
                         <div class="platform-card__art platform-card__art--euro-tour">
                             <span class="platform-card__monogram" aria-hidden="true">LET</span>
@@ -316,7 +318,7 @@
                     </article>
                 </div>
 
-                <div class="platforms__dots" aria-hidden="true">
+                <div class="platforms__dots" aria-hidden="true" data-reveal="fade">
                     <span class="platforms__dot is-active"></span>
                     <span class="platforms__dot"></span>
                     <span class="platforms__dot"></span>
@@ -327,7 +329,7 @@
         <section class="section section--lime technique" id="technique" data-section="technique">
             <div class="section-shell">
                 <div class="technique__header">
-                    <div>
+                    <div data-reveal-children="up">
                         <p class="section-label">My Technique</p>
                         <h2 class="display-title display-title--dark">
                             Trademark
@@ -335,12 +337,12 @@
                         </h2>
                     </div>
                     <a class="pill-button pill-button--ghost" href="https://www.instagram.com/annika_borrelli/?hl=en"
-                        target="_blank" rel="noopener noreferrer">Instagram DM <span
+                        target="_blank" rel="noopener noreferrer" data-reveal="fade">Instagram DM <span
                             aria-hidden="true">&nearr;</span></a>
                 </div>
 
                 <div class="technique__grid">
-                    <div class="technique__copy">
+                    <div class="technique__copy" data-reveal-children="up">
                         <p class="section-copy">
                             Annika&apos;s game is built around balance, disciplined practice, and competitive composure.
                             Her style combines athletic power with
@@ -358,10 +360,11 @@
                     </div>
 
                     <div class="technique__media">
-                        <div class="technique__portrait">
+                        <div class="technique__portrait" data-reveal="right" data-reveal-delay="120"
+                            data-parallax-speed="0.12">
                             <img src="assets/images/annika-technique.jpg" alt="Stylized portrait placeholder">
                         </div>
-                        <div class="visual-frame visual-frame--poster">
+                        <div class="visual-frame visual-frame--poster" data-reveal="scale" data-parallax-speed="0.08">
                             <img src="assets/images/technique-poster.jpg"
                                 alt="Stylized swing breakdown poster placeholder">
                         </div>
@@ -372,11 +375,7 @@
 
         <section class="contact-banner" id="contact" data-section="contact">
             <div class="section-shell contact-banner__shell">
-                <!-- <div class="contact-banner__visuals" aria-hidden="true">
-          <img class="contact-banner__image" src="assets/images/golf-ball-with-glasses.jpg" alt="">
-        </div> -->
-
-                <div class="contact-banner__content">
+                <div class="contact-banner__content" data-reveal-children="up">
                     <p class="section-label section-label--light">Work With Annika</p>
                     <h2 class="display-title display-title--contact">
                         Contact
@@ -418,14 +417,15 @@
 
         <div class="site-footer__main">
             <div class="section-shell site-footer__main-inner">
-                <div class="site-footer__meta">
+                <div class="site-footer__meta" data-reveal-children="up">
                     <p>United States</p>
                     <p>Ladies European Tour, Epson Tour, and LET Access Series.</p>
                     <p>Started golf at age 3. Utah Women&apos;s Open champion in 2019. California Women&apos;s Amateur
                         champion in 2021 and 2022.</p>
                 </div>
 
-                <div class="site-footer__socials" aria-label="Official platforms">
+                <div class="site-footer__socials" aria-label="Official platforms" data-reveal="fade"
+                    data-reveal-delay="120">
                     <a class="hero-social hero-social--footer" href="https://www.instagram.com/annika_borrelli/?hl=en"
                         target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
