@@ -12,6 +12,7 @@
 
   const openMenu = () => {
     if (!header || !menuToggle || !nav) return;
+    nav.setAttribute("aria-hidden", "false");
     header.classList.add("is-menu-open");
     menuToggle.setAttribute("aria-expanded", "true");
     menuToggle.setAttribute("aria-label", "Close menu");
@@ -23,6 +24,7 @@
     header.classList.remove("is-menu-open");
     menuToggle.setAttribute("aria-expanded", "false");
     menuToggle.setAttribute("aria-label", "Open menu");
+    nav.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
   };
 
@@ -35,6 +37,9 @@
   };
 
   if (menuToggle && nav) {
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      nav.setAttribute("aria-hidden", "true");
+    }
     menuToggle.addEventListener("click", toggleMenu);
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
@@ -47,8 +52,11 @@
       }
     });
     window.addEventListener("resize", () => {
-      if (window.matchMedia("(min-width: 901px)").matches && header && header.classList.contains("is-menu-open")) {
-        closeMenu();
+      if (window.matchMedia("(min-width: 901px)").matches) {
+        if (header && header.classList.contains("is-menu-open")) closeMenu();
+        nav.removeAttribute("aria-hidden");
+      } else {
+        if (!header || !header.classList.contains("is-menu-open")) nav.setAttribute("aria-hidden", "true");
       }
     });
   }
