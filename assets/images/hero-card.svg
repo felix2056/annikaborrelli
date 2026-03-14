@@ -1,0 +1,32 @@
+<svg width="720" height="860" viewBox="0 0 720 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="860" fill="#F6F6F0"/>
+  <rect x="30" y="30" width="660" height="510" rx="26" fill="url(#paint0_linear_1_2)"/>
+  <circle cx="360" cy="216" r="116" fill="#F9F9F7" fill-opacity="0.14"/>
+  <path d="M25 458C126.405 402.14 242.38 403.884 345.95 453.272C446.136 501.037 558.112 504.183 660.844 461.392L691 448V540H30L25 458Z" fill="#4F8F4E"/>
+  <path d="M176 480C176 414.83 228.83 362 294 362H426C491.17 362 544 414.83 544 480V540H176V480Z" fill="#1A2434" fill-opacity="0.86"/>
+  <circle cx="360" cy="300" r="104" fill="#CFB38E"/>
+  <path d="M282 270C301.5 250.667 327 241 358.5 241C390 241 415.167 250.667 434 270" stroke="#A98461" stroke-width="15" stroke-linecap="round"/>
+  <path d="M318 313C336 322.333 350 327 360 327C370.667 327 385.333 322.333 404 313" stroke="#1A2434" stroke-width="10" stroke-linecap="round"/>
+  <path d="M266 292L227 412" stroke="#D5F255" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="221" cy="429" r="29" fill="#FFFFFF"/>
+  <circle cx="221" cy="429" r="18" fill="#E8E8E3"/>
+  <rect x="220" y="412" width="9" height="45" rx="4.5" fill="#F2C14E"/>
+  <circle cx="505" cy="156" r="78" fill="#FFFFFF"/>
+  <g opacity="0.35">
+    <path d="M505 95C470.758 95 443 122.758 443 157C443 191.242 470.758 219 505 219C539.242 219 567 191.242 567 157C567 122.758 539.242 95 505 95Z" stroke="#C8CCD4"/>
+    <path d="M443 157H567" stroke="#C8CCD4"/>
+    <path d="M505 95V219" stroke="#C8CCD4"/>
+    <path d="M460 112C474 126 536 188 550 202" stroke="#C8CCD4"/>
+    <path d="M550 112C536 126 474 188 460 202" stroke="#C8CCD4"/>
+  </g>
+  <rect x="38" y="571" width="644" height="251" rx="26" fill="#FFFFFF"/>
+  <text x="62" y="636" fill="#111827" font-family="Arial, sans-serif" font-size="56" font-weight="700">Annika Borrelli</text>
+  <text x="62" y="705" fill="#566172" font-family="Arial, sans-serif" font-size="42" font-weight="500">California Women&apos;s Amateur</text>
+  <text x="62" y="758" fill="#566172" font-family="Arial, sans-serif" font-size="42" font-weight="500">Champion 2021 &amp; 2022</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="360" y1="30" x2="360" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2FAEE5"/>
+      <stop offset="1" stop-color="#155E89"/>
+    </linearGradient>
+  </defs>
+</svg>
