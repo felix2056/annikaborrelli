@@ -605,6 +605,22 @@ body.js-enhanced .hero__signature[data-reveal] {
 
 .hero-social,
 .social-chip,
+.icon-arrow-wrap,
+.career-card__arrow.icon-arrow-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
+
+.icon-arrow-wrap .icon-arrow,
+.career-card__arrow .icon-arrow {
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+}
+
 .pill-button {
   position: relative;
   display: inline-flex;
